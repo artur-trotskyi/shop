@@ -54,6 +54,28 @@ const router = new VueRouter({
         layout: 'full',
       },
     },
+    // *===============================================---*
+    // *--------- ECOMMERCE  ---------------------------------------*
+    // *===============================================---*
+    {
+      path: '/e-commerce/shop',
+      name: 'e-commerce-shop',
+      component: () => import('@/views/e-commerce/ECommerceShop.vue'),
+      meta: {
+        contentRenderer: 'sidebar-left-detached',
+        contentClass: 'ecommerce-application',
+        pageTitle: 'Shop',
+        breadcrumb: [
+          {
+            text: 'ECommerce',
+          },
+          {
+            text: 'Shop',
+            active: true,
+          },
+        ],
+      },
+    },
     {
       path: '*',
       redirect: 'error-404',

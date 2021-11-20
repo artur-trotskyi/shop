@@ -13,6 +13,11 @@ export default [
         route: 'second-page',
         icon: 'FileIcon',
       },
+      {
+        title: 'E-Commerce',
+        route: 'e-commerce-shop',
+        icon: 'ShoppingCartIcon',
+      },
     ],
   },
 ]
